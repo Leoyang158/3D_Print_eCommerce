@@ -126,6 +126,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+MEDIA_URL = '/images/'
+
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',
+]
+
+#media root for user to upload 
+MEDIA_ROOT = 'static/imgages'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
@@ -133,3 +141,4 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOW_ALL_ORIGINS = True
+
